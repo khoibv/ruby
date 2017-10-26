@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>From:</strong>
+  <%= @user_booking.from.strftime('%Y/%m/%d %H:%M') %>
+</p>
+
+<p>
+  <strong>To:</strong>
+  <%= @user_booking.to.strftime('%Y/%m/%d %H:%M') %>
+</p>
+
+<p>
+  <strong>Location:</strong>
+  <%= @user_booking.location.name %>
+</p>
+
+<%= link_to 'Edit', edit_user_booking_path(@user_booking) %> |
+<%= link_to 'Back', user_bookings_path %>

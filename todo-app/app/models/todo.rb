@@ -1,5 +1,6 @@
 class Todo < ApplicationRecord
 
-  validates :todo, length: {maximum: 100}
+  belongs_to :user
+  validates :todo, length: {maximum: 100}, presence: true
 
 end

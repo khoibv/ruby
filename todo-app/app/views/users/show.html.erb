@@ -15,5 +15,42 @@
   <%= @user.phone %>
 </p>
 
+<h2>Todo List</h2>
+<table class="table">
+  <thead>
+    <tr>
+      <th>Todo</th>
+      <th>Status</th>
+      <th>Priority</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <%= render @user.todos %>
+  </tbody>
+</table>
+
+<h2>Add a todo</h2>
+<%= form_with(model: [@user, @user.todos.build], local: true) do |form| %>
+  <div class="field">
+    <%= form.label :todo %>
+    <%= form.text_field :todo, id: :todo_todo %>
+  </div>
+
+  <div class="field">
+    <%= form.label :status %>
+    <%= form.check_box :status, id: :todo_status %>
+  </div>
+
+  <div class="field">
+    <%= form.label :priority %>
+    <%= form.number_field :priority, id: :todo_priority %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<%end %>
+
 <%= link_to 'Edit', edit_user_path(@user) %> |
 <%= link_to 'Back', users_path %>

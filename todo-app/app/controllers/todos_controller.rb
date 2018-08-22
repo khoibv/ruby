@@ -24,17 +24,21 @@ class TodosController < ApplicationController
   # POST /todos
   # POST /todos.json
   def create
-    @todo = Todo.new(todo_params)
+    @user = User.find(params[:user_id])
+    # @todo = Todo.new(todo_params)
+    @todo = @user.todos.create(todo_params)
 
-    respond_to do |format|
-      if @todo.save
-        format.html { redirect_to @todo, notice: 'Todo was successfully created.' }
-        format.json { render :show, status: :created, location: @todo }
-      else
-        format.html { render :new }
-        format.json { render json: @todo.errors, status: :unprocessable_entity }
-      end
-    end
+    redirect_to user_path(@user)
+
+    # respond_to do |format|
+    #   if @todo.save
+    #     format.html { redirect_to @todo, notice: 'Todo was successfully created.' }
+    #     format.json { render :show, status: :created, location: @todo }
+    #   else
+    #     format.html { render :new }
+    #     format.json { render json: @todo.errors, status: :unprocessable_entity }
+    #   end
+    # end
   end
 
   # PATCH/PUT /todos/1
@@ -54,11 +58,12 @@ class TodosController < ApplicationController
   # DELETE /todos/1
   # DELETE /todos/1.json
   def destroy
+
+    @user = User.find(params[:user_id])
+    @todo = @user.todos.find(params[:id])
     @todo.destroy
-    respond_to do |format|
-      format.html { redirect_to todos_url, notice: 'Todo was successfully destroyed.' }
-      format.json { head :no_content }
-    end
+
+    redirect_to user_path(@user)
   end
 
   private

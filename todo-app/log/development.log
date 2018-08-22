@@ -1253,3 +1253,1214 @@ Processing by UsersController#index as HTML
 Completed 200 OK in 112ms (Views: 104.6ms | ActiveRecord: 0.0ms)
 
 
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.0ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/users" for 127.0.0.1 at 2018-08-20 20:29:45 +0700
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered users/index.html.erb within layouts/application (27.5ms)
+Completed 200 OK in 153ms (Views: 137.3ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2018-08-20 20:29:46 +0700
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (7.9ms)
+  Rendered users/new.html.erb within layouts/application (14.7ms)
+Completed 200 OK in 116ms (Views: 108.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2018-08-20 20:29:47 +0700
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"LHKvhB9Zfl3e5vn1F04xvn203+0ZzOjUuOrLsi8XfdkcUbPocYf8U3u/eXFpgv+YKmbTZWdWz3W+PjRdFT8mSQ==", "user"=>{"name"=>"", "address"=>"", "phone"=>""}, "commit"=>"Create User"}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.5ms)[0m  [1m[31mrollback transaction[0m
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (7.8ms)
+  Rendered users/new.html.erb within layouts/application (15.7ms)
+Completed 200 OK in 5651ms (Views: 114.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2018-08-20 20:31:45 +0700
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered users/index.html.erb within layouts/application (23.5ms)
+Completed 200 OK in 135ms (Views: 123.4ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2018-08-20 20:31:47 +0700
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (6.9ms)
+  Rendered users/new.html.erb within layouts/application (13.8ms)
+Completed 200 OK in 119ms (Views: 111.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2018-08-20 20:31:48 +0700
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Wt+Es19PNNblym2jXxE5nFVhB8XLiIImG44/K4IWq9Fq/JjfMZG22ECT7Sch3fe6ArMLTbUSpYcdWsDEuD7wQQ==", "user"=>{"name"=>"", "address"=>"", "phone"=>""}, "commit"=>"Create User"}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (9.8ms)
+  Rendered users/new.html.erb within layouts/application (18.7ms)
+Completed 200 OK in 143ms (Views: 133.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2018-08-20 20:31:50 +0700
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered users/index.html.erb within layouts/application (6.9ms)
+Completed 200 OK in 111ms (Views: 104.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/todos" for 127.0.0.1 at 2018-08-20 20:31:54 +0700
+Processing by TodosController#index as HTML
+  Rendering todos/index.html.erb within layouts/application
+  [1m[36mTodo Load (0.5ms)[0m  [1m[34mSELECT "todos".* FROM "todos"[0m
+  Rendered todos/index.html.erb within layouts/application (20.1ms)
+Completed 200 OK in 140ms (Views: 115.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/todos/new" for 127.0.0.1 at 2018-08-20 20:31:56 +0700
+Processing by TodosController#new as HTML
+  Rendering todos/new.html.erb within layouts/application
+  Rendered todos/_form.html.erb (7.5ms)
+  Rendered todos/new.html.erb within layouts/application (15.1ms)
+Completed 200 OK in 119ms (Views: 108.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/todos" for 127.0.0.1 at 2018-08-20 20:31:57 +0700
+Processing by TodosController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"CoSE0Rgur6tTmPzRUwvsfqsVua5hTjrnxIG6sqlKDyI7NnW/gQk6WkJ5jY90pRrOSINi6bZag489J3VfnH5lCA==", "todo"=>{"todo"=>"", "status"=>"0", "priority"=>""}, "commit"=>"Create Todo"}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  Rendering todos/new.html.erb within layouts/application
+  Rendered todos/_form.html.erb (8.8ms)
+  Rendered todos/new.html.erb within layouts/application (15.7ms)
+Completed 200 OK in 132ms (Views: 111.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/todos" for 127.0.0.1 at 2018-08-20 20:31:59 +0700
+Processing by TodosController#index as HTML
+  Rendering todos/index.html.erb within layouts/application
+  [1m[36mTodo Load (0.0ms)[0m  [1m[34mSELECT "todos".* FROM "todos"[0m
+  Rendered todos/index.html.erb within layouts/application (5.9ms)
+Completed 200 OK in 108ms (Views: 100.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/todos/4/edit" for 127.0.0.1 at 2018-08-20 20:32:01 +0700
+Processing by TodosController#edit as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mTodo Load (0.0ms)[0m  [1m[34mSELECT  "todos".* FROM "todos" WHERE "todos"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering todos/edit.html.erb within layouts/application
+  Rendered todos/_form.html.erb (7.8ms)
+  Rendered todos/edit.html.erb within layouts/application (14.4ms)
+Completed 200 OK in 130ms (Views: 120.1ms | ActiveRecord: 0.0ms)
+
+
+Started PATCH "/todos/4" for 127.0.0.1 at 2018-08-20 20:32:02 +0700
+Processing by TodosController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Nd3ikZqegkebty6cG7wgHJascyHV/yOqAYAorKzkKVywdqTyeA0FlUBP0+hy9fwEJxeYNBp9nIH/ZUNO6sS0OQ==", "todo"=>{"todo"=>"", "status"=>"0", "priority"=>""}, "commit"=>"Update Todo", "id"=>"4"}
+  [1m[36mTodo Load (0.0ms)[0m  [1m[34mSELECT  "todos".* FROM "todos" WHERE "todos"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  Rendering todos/edit.html.erb within layouts/application
+  Rendered todos/_form.html.erb (9.5ms)
+  Rendered todos/edit.html.erb within layouts/application (18.0ms)
+Completed 200 OK in 129ms (Views: 118.2ms | ActiveRecord: 0.0ms)
+
+
+Started PATCH "/todos/4" for 127.0.0.1 at 2018-08-20 20:32:10 +0700
+Processing by TodosController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"g4aD0nrN6HEFUVIbZ5iWzcroxHRryO9KijKNQ0Dd7qBsGc3jXRE1kIKCukyfQx2WgBZdmR8nesvvV5jwIeDC2w==", "todo"=>{"todo"=>"Khong duoc bo trong", "status"=>"0", "priority"=>""}, "commit"=>"Update Todo", "id"=>"4"}
+  [1m[36mTodo Load (0.0ms)[0m  [1m[34mSELECT  "todos".* FROM "todos" WHERE "todos"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (1.0ms)[0m  [1m[31mrollback transaction[0m
+  Rendering todos/edit.html.erb within layouts/application
+  Rendered todos/_form.html.erb (6.9ms)
+  Rendered todos/edit.html.erb within layouts/application (16.7ms)
+Completed 200 OK in 125ms (Views: 116.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/todos" for 127.0.0.1 at 2018-08-20 20:32:14 +0700
+Processing by TodosController#index as HTML
+  Rendering todos/index.html.erb within layouts/application
+  [1m[36mTodo Load (0.0ms)[0m  [1m[34mSELECT "todos".* FROM "todos"[0m
+  Rendered todos/index.html.erb within layouts/application (5.5ms)
+Completed 200 OK in 110ms (Views: 102.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2018-08-21 10:03:17 +0700
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered users/index.html.erb within layouts/application (29.1ms)
+Completed 200 OK in 267ms (Views: 243.7ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2018-08-21 10:03:19 +0700
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (14.6ms)
+  Rendered users/new.html.erb within layouts/application (33.0ms)
+Completed 200 OK in 155ms (Views: 143.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-08-21 10:48:26 +0700
+Processing by TodosController#index as HTML
+  Rendering todos/index.html.erb within layouts/application
+  [1m[36mTodo Load (0.5ms)[0m  [1m[34mSELECT "todos".* FROM "todos"[0m
+  Rendered todos/index.html.erb within layouts/application (38.1ms)
+Completed 200 OK in 212ms (Views: 180.0ms | ActiveRecord: 3.6ms)
+
+
+Started GET "/todos" for 127.0.0.1 at 2018-08-21 10:48:36 +0700
+Processing by TodosController#index as HTML
+  Rendering todos/index.html.erb within layouts/application
+  [1m[36mTodo Load (0.5ms)[0m  [1m[34mSELECT "todos".* FROM "todos"[0m
+  Rendered todos/index.html.erb within layouts/application (6.5ms)
+Completed 200 OK in 116ms (Views: 107.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2018-08-21 10:48:38 +0700
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered users/index.html.erb within layouts/application (24.5ms)
+Completed 200 OK in 147ms (Views: 130.8ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/todos" for 127.0.0.1 at 2018-08-21 10:48:39 +0700
+Processing by TodosController#index as HTML
+  Rendering todos/index.html.erb within layouts/application
+  [1m[36mTodo Load (1.0ms)[0m  [1m[34mSELECT "todos".* FROM "todos"[0m
+  Rendered todos/index.html.erb within layouts/application (8.5ms)
+Completed 200 OK in 134ms (Views: 120.7ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2018-08-21 10:48:40 +0700
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered users/index.html.erb within layouts/application (7.1ms)
+Completed 200 OK in 131ms (Views: 121.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/todos" for 127.0.0.1 at 2018-08-21 10:48:40 +0700
+Processing by TodosController#index as HTML
+  Rendering todos/index.html.erb within layouts/application
+  [1m[36mTodo Load (0.0ms)[0m  [1m[34mSELECT "todos".* FROM "todos"[0m
+  Rendered todos/index.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 132ms (Views: 122.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2018-08-21 10:48:41 +0700
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered users/index.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 119ms (Views: 109.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/todos" for 127.0.0.1 at 2018-08-21 10:48:42 +0700
+Processing by TodosController#index as HTML
+  Rendering todos/index.html.erb within layouts/application
+  [1m[36mTodo Load (0.5ms)[0m  [1m[34mSELECT "todos".* FROM "todos"[0m
+  Rendered todos/index.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 123ms (Views: 113.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2018-08-21 10:48:45 +0700
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered users/index.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 128ms (Views: 117.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/todos" for 127.0.0.1 at 2018-08-21 10:48:46 +0700
+Processing by TodosController#index as HTML
+  Rendering todos/index.html.erb within layouts/application
+  [1m[36mTodo Load (0.5ms)[0m  [1m[34mSELECT "todos".* FROM "todos"[0m
+  Rendered todos/index.html.erb within layouts/application (7.5ms)
+Completed 200 OK in 118ms (Views: 109.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2018-08-21 10:48:47 +0700
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered users/index.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 121ms (Views: 113.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/todos" for 127.0.0.1 at 2018-08-21 10:48:48 +0700
+Processing by TodosController#index as HTML
+  Rendering todos/index.html.erb within layouts/application
+  [1m[36mTodo Load (0.5ms)[0m  [1m[34mSELECT "todos".* FROM "todos"[0m
+  Rendered todos/index.html.erb within layouts/application (7.5ms)
+Completed 200 OK in 132ms (Views: 121.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2018-08-21 10:48:49 +0700
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered users/index.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 119ms (Views: 108.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/todos" for 127.0.0.1 at 2018-08-21 10:48:57 +0700
+Processing by TodosController#index as HTML
+  Rendering todos/index.html.erb within layouts/application
+  [1m[36mTodo Load (0.5ms)[0m  [1m[34mSELECT "todos".* FROM "todos"[0m
+  Rendered todos/index.html.erb within layouts/application (9.0ms)
+Completed 200 OK in 168ms (Views: 151.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2018-08-21 10:49:00 +0700
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered users/index.html.erb within layouts/application (6.5ms)
+Completed 200 OK in 123ms (Views: 113.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2018-08-21 11:13:59 +0700
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered users/index.html.erb within layouts/application (10.5ms)
+Completed 200 OK in 144ms (Views: 130.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2018-08-21 11:15:22 +0700
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered users/index.html.erb within layouts/application (7.5ms)
+Completed 200 OK in 130ms (Views: 122.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2018-08-21 11:40:20 +0700
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered users/index.html.erb within layouts/application (33.1ms)
+Completed 200 OK in 176ms (Views: 156.9ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2018-08-21 11:40:22 +0700
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered users/index.html.erb within layouts/application (6.5ms)
+Completed 200 OK in 125ms (Views: 116.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-08-21 11:40:48 +0700
+Processing by TodosController#index as HTML
+  Rendering todos/index.html.erb within layouts/application
+  [1m[36mTodo Load (0.0ms)[0m  [1m[34mSELECT "todos".* FROM "todos"[0m
+  Rendered todos/index.html.erb within layouts/application (349.9ms)
+Completed 500 Internal Server Error in 384ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `todo_path' for #<#<Class:0x000000000c70b078>:0x000000000c7092a0>
+Did you mean?  root_path):
+    18:         <td><%= todo.todo %></td>
+    19:         <td><%= todo.status %></td>
+    20:         <td><%= todo.priority %></td>
+    21:         <td><%= link_to 'Show', todo %></td>
+    22:         <td><%= link_to 'Edit', edit_todo_path(todo) %></td>
+    23:         <td><%= link_to 'Destroy', todo, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+    24:       </tr>
+  
+app/views/todos/index.html.erb:21:in `block in _app_views_todos_index_html_erb___2083165941_104357000'
+app/views/todos/index.html.erb:16:in `_app_views_todos_index_html_erb___2083165941_104357000'
+Started PUT "/__web_console/repl_sessions/ce10ee757df061e5150246a2368ab586" for 127.0.0.1 at 2018-08-21 11:41:35 +0700
+Started PUT "/__web_console/repl_sessions/ce10ee757df061e5150246a2368ab586" for 127.0.0.1 at 2018-08-21 11:41:39 +0700
+Started GET "/" for 127.0.0.1 at 2018-08-21 11:42:56 +0700
+Processing by TodosController#index as HTML
+  Rendering todos/index.html.erb within layouts/application
+  [1m[36mTodo Load (0.0ms)[0m  [1m[34mSELECT "todos".* FROM "todos"[0m
+  Rendered todos/index.html.erb within layouts/application (22.1ms)
+Completed 200 OK in 140ms (Views: 126.4ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-08-21 11:43:14 +0700
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered users/index.html.erb within layouts/application (25.6ms)
+Completed 200 OK in 174ms (Views: 161.3ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-08-21 12:03:10 +0700
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered users/index.html.erb within layouts/application (25.0ms)
+Completed 200 OK in 178ms (Views: 152.1ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2018-08-21 12:03:14 +0700
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (9.5ms)
+  Rendered users/new.html.erb within layouts/application (16.0ms)
+Completed 200 OK in 125ms (Views: 116.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2018-08-21 12:03:19 +0700
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered users/index.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 114ms (Views: 106.1ms | ActiveRecord: 0.5ms)
+
+
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.0ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/users" for 127.0.0.1 at 2018-08-21 12:03:45 +0700
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered users/index.html.erb within layouts/application (23.1ms)
+Completed 200 OK in 144ms (Views: 129.8ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/users/4" for 127.0.0.1 at 2018-08-21 12:04:00 +0700
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (57.4ms)
+Completed 500 Internal Server Error in 87ms (ActiveRecord: 2.0ms)
+
+
+  
+ActionView::Template::Error (unknown attribute 'user_id' for Todo.):
+    16: </p>
+    17: 
+    18: <h2>Add a todo</h2>
+    19: <%= form_with(model: [@user, @user.todos.build], local: true) do |form| %>
+    20:   <div class="field">
+    21:     <%= form.label :todo %>
+    22:     <%= form.text_field :todo, id: :todo_todo %>
+  
+app/views/users/show.html.erb:19:in `_app_views_users_show_html_erb___1611924422_65694220'
+Started PUT "/__web_console/repl_sessions/51d710cef5aa618745dd1797be21e34b" for 127.0.0.1 at 2018-08-21 13:20:17 +0700
+Started PUT "/__web_console/repl_sessions/51d710cef5aa618745dd1797be21e34b" for 127.0.0.1 at 2018-08-21 13:20:17 +0700
+Started PUT "/__web_console/repl_sessions/51d710cef5aa618745dd1797be21e34b" for 127.0.0.1 at 2018-08-21 13:20:22 +0700
+Started PUT "/__web_console/repl_sessions/51d710cef5aa618745dd1797be21e34b" for 127.0.0.1 at 2018-08-21 13:20:42 +0700
+Started PUT "/__web_console/repl_sessions/51d710cef5aa618745dd1797be21e34b" for 127.0.0.1 at 2018-08-21 13:20:44 +0700
+Started PUT "/__web_console/repl_sessions/51d710cef5aa618745dd1797be21e34b" for 127.0.0.1 at 2018-08-21 13:21:05 +0700
+Started PUT "/__web_console/repl_sessions/51d710cef5aa618745dd1797be21e34b" for 127.0.0.1 at 2018-08-21 13:21:19 +0700
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.0ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/users/4" for 127.0.0.1 at 2018-08-21 13:35:08 +0700
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (42.2ms)
+Completed 500 Internal Server Error in 103ms (ActiveRecord: 3.9ms)
+
+
+  
+ActionView::Template::Error (unknown attribute 'user_id' for Todo.):
+    16: </p>
+    17: 
+    18: <h2>Add a todo</h2>
+    19: <%= form_with(model: [@user, @user.todos.build], local: true) do |form| %>
+    20:   <div class="field">
+    21:     <%= form.label :todo %>
+    22:     <%= form.text_field :todo, id: :todo_todo %>
+  
+app/views/users/show.html.erb:19:in `_app_views_users_show_html_erb___1611924422_95560460'
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to AddUserIdToTodos (20180821064038)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.6ms)[0m  [1m[35mALTER TABLE "todos" ADD "user_id" integer[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20180821064038"]]
+  [1m[35m (99.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.0ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/users/4" for 127.0.0.1 at 2018-08-21 13:41:18 +0700
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (43.6ms)
+Completed 200 OK in 210ms (Views: 175.8ms | ActiveRecord: 2.0ms)
+
+
+Started POST "/users/4/todos" for 127.0.0.1 at 2018-08-21 13:41:23 +0700
+Processing by TodosController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"8WhvtgLrsUuTOyEu2+GCoch2sCSZ7pp9uh5icawdrNAe9yGHJTdsqhToyXkjOgn6gogpye0BD/zfe3fCzSCAqw==", "todo"=>{"todo"=>"", "status"=>"0", "priority"=>""}, "commit"=>"Create Todo", "user_id"=>"4"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", nil], ["LIMIT", 1]]
+Completed 404 Not Found in 5ms (ActiveRecord: 0.5ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find User with 'id'=):
+  
+app/controllers/todos_controller.rb:27:in `create'
+Started POST "/users/4/todos" for 127.0.0.1 at 2018-08-21 13:41:50 +0700
+Processing by TodosController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"8WhvtgLrsUuTOyEu2+GCoch2sCSZ7pp9uh5icawdrNAe9yGHJTdsqhToyXkjOgn6gogpye0BD/zfe3fCzSCAqw==", "todo"=>{"todo"=>"", "status"=>"0", "priority"=>""}, "commit"=>"Create Todo", "user_id"=>"4"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/users/4
+Completed 302 Found in 65ms (ActiveRecord: 4.5ms)
+
+
+Started GET "/users/4" for 127.0.0.1 at 2018-08-21 13:41:50 +0700
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (12.0ms)
+Completed 200 OK in 124ms (Views: 114.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2018-08-21 13:42:01 +0700
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered users/index.html.erb within layouts/application (6.5ms)
+Completed 200 OK in 116ms (Views: 106.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/users/4" for 127.0.0.1 at 2018-08-21 13:42:03 +0700
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (10.0ms)
+Completed 200 OK in 120ms (Views: 110.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/4/todos" for 127.0.0.1 at 2018-08-21 13:42:21 +0700
+Processing by TodosController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"pJ/VTB37Tc0RvhOdio+fyYOQQKbTinU/2dGfT9ZTaSwGWRvUrKVcZH/C/oeeu8tO16BiXKq0YgcS0+oddrqH9g==", "todo"=>{"todo"=>"Learn English", "status"=>"0", "priority"=>"1"}, "commit"=>"Create Todo", "user_id"=>"4"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[35m (0.5ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.1ms)[0m  [1m[32mINSERT INTO "todos" ("todo", "status", "priority", "created_at", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?, ?)[0m  [["todo", "Learn English"], ["status", "f"], ["priority", 1], ["created_at", "2018-08-21 06:42:21.636382"], ["updated_at", "2018-08-21 06:42:21.636382"], ["user_id", 4]]
+  [1m[35m (86.3ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/users/4
+Completed 302 Found in 101ms (ActiveRecord: 88.5ms)
+
+
+Started GET "/users/4" for 127.0.0.1 at 2018-08-21 13:42:21 +0700
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (11.5ms)
+Completed 200 OK in 124ms (Views: 114.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2018-08-21 13:42:25 +0700
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered users/index.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 111ms (Views: 102.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/users/4" for 127.0.0.1 at 2018-08-21 13:42:27 +0700
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (11.0ms)
+Completed 200 OK in 124ms (Views: 113.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2018-08-21 13:42:28 +0700
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered users/index.html.erb within layouts/application (5.5ms)
+Completed 200 OK in 110ms (Views: 102.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/4/edit" for 127.0.0.1 at 2018-08-21 13:42:29 +0700
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering users/edit.html.erb within layouts/application
+  Rendered users/_form.html.erb (7.5ms)
+  Rendered users/edit.html.erb within layouts/application (16.6ms)
+Completed 200 OK in 121ms (Views: 110.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/todos" for 127.0.0.1 at 2018-08-21 13:42:31 +0700
+Processing by TodosController#index as HTML
+  Rendering todos/index.html.erb within layouts/application
+  [1m[36mTodo Load (0.5ms)[0m  [1m[34mSELECT "todos".* FROM "todos"[0m
+  Rendered todos/index.html.erb within layouts/application (7.6ms)
+Completed 200 OK in 113ms (Views: 104.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/todos" for 127.0.0.1 at 2018-08-21 13:46:19 +0700
+Processing by TodosController#index as HTML
+  Rendering todos/index.html.erb within layouts/application
+  [1m[36mTodo Load (0.5ms)[0m  [1m[34mSELECT "todos".* FROM "todos"[0m
+  Rendered todos/index.html.erb within layouts/application (9.0ms)
+Completed 200 OK in 117ms (Views: 109.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/todos/5" for 127.0.0.1 at 2018-08-21 13:46:22 +0700
+Processing by TodosController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mTodo Load (0.5ms)[0m  [1m[34mSELECT  "todos".* FROM "todos" WHERE "todos"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  Rendering todos/show.html.erb within layouts/application
+  Rendered todos/show.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 121ms (Views: 107.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/todos" for 127.0.0.1 at 2018-08-21 13:46:27 +0700
+Processing by TodosController#index as HTML
+  Rendering todos/index.html.erb within layouts/application
+  [1m[36mTodo Load (0.0ms)[0m  [1m[34mSELECT "todos".* FROM "todos"[0m
+  Rendered todos/index.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 123ms (Views: 115.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/todos/5" for 127.0.0.1 at 2018-08-21 13:46:30 +0700
+Processing by TodosController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mTodo Load (0.5ms)[0m  [1m[34mSELECT  "todos".* FROM "todos" WHERE "todos"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  Rendering todos/show.html.erb within layouts/application
+  Rendered todos/show.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 107ms (Views: 97.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/todos/5" for 127.0.0.1 at 2018-08-21 13:46:33 +0700
+Processing by TodosController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mTodo Load (0.5ms)[0m  [1m[34mSELECT  "todos".* FROM "todos" WHERE "todos"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  Rendering todos/show.html.erb within layouts/application
+  Rendered todos/show.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 120ms (Views: 110.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/todos" for 127.0.0.1 at 2018-08-21 13:46:51 +0700
+Processing by TodosController#index as HTML
+  Rendering todos/index.html.erb within layouts/application
+  [1m[36mTodo Load (0.5ms)[0m  [1m[34mSELECT "todos".* FROM "todos"[0m
+  Rendered todos/index.html.erb within layouts/application (7.5ms)
+Completed 200 OK in 127ms (Views: 117.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/todos/5/edit" for 127.0.0.1 at 2018-08-21 13:46:52 +0700
+Processing by TodosController#edit as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mTodo Load (0.0ms)[0m  [1m[34mSELECT  "todos".* FROM "todos" WHERE "todos"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  Rendering todos/edit.html.erb within layouts/application
+  Rendered todos/_form.html.erb (8.0ms)
+  Rendered todos/edit.html.erb within layouts/application (28.6ms)
+Completed 200 OK in 156ms (Views: 142.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/todos" for 127.0.0.1 at 2018-08-21 13:46:54 +0700
+Processing by TodosController#index as HTML
+  Rendering todos/index.html.erb within layouts/application
+  [1m[36mTodo Load (0.5ms)[0m  [1m[34mSELECT "todos".* FROM "todos"[0m
+  Rendered todos/index.html.erb within layouts/application (8.0ms)
+Completed 200 OK in 119ms (Views: 110.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/todos/5" for 127.0.0.1 at 2018-08-21 13:46:55 +0700
+Processing by TodosController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mTodo Load (0.5ms)[0m  [1m[34mSELECT  "todos".* FROM "todos" WHERE "todos"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  Rendering todos/show.html.erb within layouts/application
+  Rendered todos/show.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 119ms (Views: 106.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/todos" for 127.0.0.1 at 2018-08-21 13:47:01 +0700
+Processing by TodosController#index as HTML
+  Rendering todos/index.html.erb within layouts/application
+  [1m[36mTodo Load (0.0ms)[0m  [1m[34mSELECT "todos".* FROM "todos"[0m
+  Rendered todos/index.html.erb within layouts/application (7.5ms)
+Completed 200 OK in 119ms (Views: 109.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2018-08-21 13:47:02 +0700
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered users/index.html.erb within layouts/application (7.5ms)
+Completed 200 OK in 121ms (Views: 109.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/users/4" for 127.0.0.1 at 2018-08-21 13:47:07 +0700
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mTodo Load (0.0ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."user_id" = ?[0m  [["user_id", 4]]
+  Rendered users/show.html.erb within layouts/application (14.5ms)
+Completed 200 OK in 126ms (Views: 115.7ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/users/4/todos" for 127.0.0.1 at 2018-08-21 13:47:16 +0700
+Processing by TodosController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"pvoKSU2FdBUHegqtATcerbaT56to3E021QWB+D8lReQEPMTR/NtlvGkG57cVA0oq4qPFURHiWg4eB/Sqn8yrPg==", "todo"=>{"todo"=>"Play with son", "status"=>"0", "priority"=>"1"}, "commit"=>"Create Todo", "user_id"=>"4"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (15.2ms)[0m  [1m[32mINSERT INTO "todos" ("todo", "status", "priority", "created_at", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?, ?)[0m  [["todo", "Play with son"], ["status", "f"], ["priority", 1], ["created_at", "2018-08-21 06:47:16.466486"], ["updated_at", "2018-08-21 06:47:16.466486"], ["user_id", 4]]
+  [1m[35m (95.6ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/users/4
+Completed 302 Found in 124ms (ActiveRecord: 111.3ms)
+
+
+Started GET "/users/4" for 127.0.0.1 at 2018-08-21 13:47:16 +0700
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mTodo Load (0.5ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."user_id" = ?[0m  [["user_id", 4]]
+  Rendered users/show.html.erb within layouts/application (15.5ms)
+Completed 200 OK in 142ms (Views: 130.9ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/users/4/todos" for 127.0.0.1 at 2018-08-21 13:47:22 +0700
+Processing by TodosController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"fh1006Zxyj9+lysEUlHxojqoB9EespAGZU+Y2grsDsSRgjriga0X3vlEw1Oqinr5cFaePGpdBYcAKo1pa9Eivw==", "todo"=>{"todo"=>"Learn Ruby on Rails (2nd time)", "status"=>"0", "priority"=>"2"}, "commit"=>"Create Todo", "user_id"=>"4"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (2.0ms)[0m  [1m[32mINSERT INTO "todos" ("todo", "status", "priority", "created_at", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?, ?)[0m  [["todo", "Learn Ruby on Rails (2nd time)"], ["status", "f"], ["priority", 2], ["created_at", "2018-08-21 06:47:22.951215"], ["updated_at", "2018-08-21 06:47:22.951215"], ["user_id", 4]]
+  [1m[35m (83.8ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/users/4
+Completed 302 Found in 103ms (ActiveRecord: 86.8ms)
+
+
+Started GET "/users/4" for 127.0.0.1 at 2018-08-21 13:47:23 +0700
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mTodo Load (1.0ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."user_id" = ?[0m  [["user_id", 4]]
+  Rendered users/show.html.erb within layouts/application (14.1ms)
+Completed 200 OK in 133ms (Views: 123.1ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/users/4/todos" for 127.0.0.1 at 2018-08-21 13:47:29 +0700
+Processing by TodosController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"cxXjDeUg27u+OeCWpT8iqdohEn1p+7hEmKVGSeVE+86ciq08wvwGWjnqCMFd5KnykN+LkB0ULcX9wFP6hHnXtQ==", "todo"=>{"todo"=>"Khong duoc bo trong", "status"=>"0", "priority"=>"4"}, "commit"=>"Create Todo", "user_id"=>"4"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[35m (0.5ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[32mINSERT INTO "todos" ("todo", "status", "priority", "created_at", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?, ?)[0m  [["todo", "Khong duoc bo trong"], ["status", "f"], ["priority", 4], ["created_at", "2018-08-21 06:47:29.965571"], ["updated_at", "2018-08-21 06:47:29.965571"], ["user_id", 4]]
+  [1m[35m (76.9ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/users/4
+Completed 302 Found in 92ms (ActiveRecord: 78.9ms)
+
+
+Started GET "/users/4" for 127.0.0.1 at 2018-08-21 13:47:30 +0700
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mTodo Load (0.5ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."user_id" = ?[0m  [["user_id", 4]]
+  Rendered users/show.html.erb within layouts/application (14.5ms)
+Completed 200 OK in 143ms (Views: 133.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2018-08-21 13:47:36 +0700
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered users/index.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 125ms (Views: 105.9ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/users/4" for 127.0.0.1 at 2018-08-21 13:47:38 +0700
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mTodo Load (0.0ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."user_id" = ?[0m  [["user_id", 4]]
+  Rendered users/show.html.erb within layouts/application (13.1ms)
+Completed 200 OK in 127ms (Views: 114.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2018-08-21 13:47:50 +0700
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered users/index.html.erb within layouts/application (7.5ms)
+Completed 200 OK in 129ms (Views: 118.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/users/4" for 127.0.0.1 at 2018-08-21 13:48:05 +0700
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mTodo Load (0.5ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."user_id" = ?[0m  [["user_id", 4]]
+  Rendered users/show.html.erb within layouts/application (14.5ms)
+Completed 200 OK in 126ms (Views: 113.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/users/4" for 127.0.0.1 at 2018-08-21 13:51:45 +0700
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mTodo Load (0.5ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."user_id" = ?[0m  [["user_id", 4]]
+  Rendered collection of todos/_todo.html.erb [4 times] (1.5ms)
+  Rendered users/show.html.erb within layouts/application (23.5ms)
+Completed 200 OK in 129ms (Views: 119.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/users/4" for 127.0.0.1 at 2018-08-21 13:51:47 +0700
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mTodo Load (0.5ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."user_id" = ?[0m  [["user_id", 4]]
+  Rendered collection of todos/_todo.html.erb [4 times] (1.0ms)
+  Rendered users/show.html.erb within layouts/application (21.6ms)
+Completed 200 OK in 131ms (Views: 121.3ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2018-08-21 13:53:17 +0700
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered users/index.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 116ms (Views: 109.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/4" for 127.0.0.1 at 2018-08-21 13:53:20 +0700
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mTodo Load (0.5ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."user_id" = ?[0m  [["user_id", 4]]
+  Rendered collection of todos/_todo.html.erb [4 times] (1.5ms)
+  Rendered users/show.html.erb within layouts/application (22.1ms)
+Completed 200 OK in 135ms (Views: 124.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/users/4" for 127.0.0.1 at 2018-08-21 13:53:29 +0700
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mTodo Load (0.5ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."user_id" = ?[0m  [["user_id", 4]]
+  Rendered collection of todos/_todo.html.erb [4 times] (1.5ms)
+  Rendered users/show.html.erb within layouts/application (23.1ms)
+Completed 200 OK in 139ms (Views: 127.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/users/4" for 127.0.0.1 at 2018-08-21 13:55:05 +0700
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mTodo Load (0.5ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."user_id" = ?[0m  [["user_id", 4]]
+  Rendered collection of todos/_todo.html.erb [4 times] (1.0ms)
+  Rendered users/show.html.erb within layouts/application (23.1ms)
+Completed 200 OK in 160ms (Views: 151.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/users/4" for 127.0.0.1 at 2018-08-21 14:23:37 +0700
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mTodo Load (1.0ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."user_id" = ?[0m  [["user_id", 4]]
+  Rendered collection of todos/_todo.html.erb [4 times] (4.0ms)
+  Rendered users/show.html.erb within layouts/application (25.1ms)
+Completed 200 OK in 144ms (Views: 133.5ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/users/4" for 127.0.0.1 at 2018-08-21 14:23:57 +0700
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mTodo Load (0.5ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."user_id" = ?[0m  [["user_id", 4]]
+  Rendered collection of todos/_todo.html.erb [4 times] (4.0ms)
+  Rendered users/show.html.erb within layouts/application (24.0ms)
+Completed 200 OK in 137ms (Views: 125.4ms | ActiveRecord: 0.5ms)
+
+
+Started DELETE "/users/4/todos/8" for 127.0.0.1 at 2018-08-21 14:24:04 +0700
+Processing by TodosController#destroy as HTML
+  Parameters: {"authenticity_token"=>"JmabgRB773XUXPH4sBG4Og7h6SC+M0CcEQeI7sQvt8rJ+dWwN6cylFOPGa9IyjNhRB9wzcrc1R10Yp1dpRKbsQ==", "user_id"=>"4", "id"=>"8"}
+  [1m[36mTodo Load (0.5ms)[0m  [1m[34mSELECT  "todos".* FROM "todos" WHERE "todos"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[31mDELETE FROM "todos" WHERE "todos"."id" = ?[0m  [["id", 8]]
+  [1m[35m (87.5ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/todos
+Completed 302 Found in 97ms (ActiveRecord: 89.0ms)
+
+
+Started GET "/todos" for 127.0.0.1 at 2018-08-21 14:24:04 +0700
+Processing by TodosController#index as HTML
+  Rendering todos/index.html.erb within layouts/application
+  [1m[36mTodo Load (0.5ms)[0m  [1m[34mSELECT "todos".* FROM "todos"[0m
+  Rendered todos/index.html.erb within layouts/application (9.5ms)
+Completed 200 OK in 123ms (Views: 113.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2018-08-21 14:24:15 +0700
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered users/index.html.erb within layouts/application (8.6ms)
+Completed 200 OK in 121ms (Views: 113.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2018-08-21 14:27:13 +0700
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered users/index.html.erb within layouts/application (28.1ms)
+Completed 200 OK in 154ms (Views: 137.5ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/users/4" for 127.0.0.1 at 2018-08-21 14:27:15 +0700
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mTodo Load (0.0ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."user_id" = ?[0m  [["user_id", 4]]
+  Rendered collection of todos/_todo.html.erb [3 times] (4.0ms)
+  Rendered users/show.html.erb within layouts/application (50.1ms)
+Completed 200 OK in 162ms (Views: 150.9ms | ActiveRecord: 2.5ms)
+
+
+Started DELETE "/users/4/todos/7" for 127.0.0.1 at 2018-08-21 14:27:18 +0700
+Processing by TodosController#destroy as HTML
+  Parameters: {"authenticity_token"=>"WQDdbDfJi+Amd+3G+LlFbnF18NYB+cTIcmjzyZ4xSzu2n5NdEBVWAaGkBZEAYs41O4tpO3UWUUkXDeZ6/wxnQA==", "user_id"=>"4", "id"=>"7"}
+  [1m[36mTodo Load (1.0ms)[0m  [1m[34mSELECT  "todos".* FROM "todos" WHERE "todos"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mTodo Load (0.5ms)[0m  [1m[34mSELECT  "todos".* FROM "todos" WHERE "todos"."user_id" = ? AND "todos"."id" = ? LIMIT ?[0m  [["user_id", 4], ["id", 7], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.5ms)[0m  [1m[31mDELETE FROM "todos" WHERE "todos"."id" = ?[0m  [["id", 7]]
+  [1m[35m (92.9ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/users/4
+Completed 302 Found in 115ms (ActiveRecord: 96.5ms)
+
+
+Started GET "/users/4" for 127.0.0.1 at 2018-08-21 14:27:19 +0700
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mTodo Load (0.5ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."user_id" = ?[0m  [["user_id", 4]]
+  Rendered collection of todos/_todo.html.erb [2 times] (2.5ms)
+  Rendered users/show.html.erb within layouts/application (24.1ms)
+Completed 200 OK in 146ms (Views: 134.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-08-21 17:02:00 +0700
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered users/index.html.erb within layouts/application (14.1ms)
+Completed 200 OK in 489ms (Views: 458.7ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2018-08-21 17:02:18 +0700
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+Filter chain halted as #<Proc:0x0000000003ca78c8@C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/actionpack-5.1.6/lib/action_controller/metal/http_authentication.rb:70> rendered or redirected
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2018-08-21 17:02:23 +0700
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mTodo Load (0.0ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."user_id" = ?[0m  [["user_id", 1]]
+  Rendered collection of templates [0 times] (0.0ms)
+  Rendered users/show.html.erb within layouts/application (128.2ms)
+Completed 200 OK in 205ms (Views: 172.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2018-08-21 17:02:26 +0700
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mTodo Load (1.0ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."user_id" = ?[0m  [["user_id", 1]]
+  Rendered collection of templates [0 times] (0.0ms)
+  Rendered users/show.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 53ms (Views: 45.9ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/todos" for 127.0.0.1 at 2018-08-21 17:02:33 +0700
+Processing by TodosController#index as HTML
+  Rendering todos/index.html.erb within layouts/application
+  [1m[36mTodo Load (0.5ms)[0m  [1m[34mSELECT "todos".* FROM "todos"[0m
+  Rendered todos/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 64ms (Views: 42.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2018-08-21 17:02:34 +0700
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered users/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 60ms (Views: 53.4ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2018-08-21 17:02:39 +0700
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered users/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 53ms (Views: 47.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/4" for 127.0.0.1 at 2018-08-21 17:02:42 +0700
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"4"}
+Filter chain halted as #<Proc:0x0000000003ca78c8@C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/actionpack-5.1.6/lib/action_controller/metal/http_authentication.rb:70> rendered or redirected
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/4" for 127.0.0.1 at 2018-08-21 17:02:46 +0700
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"4"}
+Filter chain halted as #<Proc:0x0000000003ca78c8@C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/actionpack-5.1.6/lib/action_controller/metal/http_authentication.rb:70> rendered or redirected
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-08-22 10:37:39 +0700
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered users/index.html.erb within layouts/application (13.1ms)
+Completed 200 OK in 483ms (Views: 458.9ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-08-22 10:37:51 +0700
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered users/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 51ms (Views: 44.6ms | ActiveRecord: 0.5ms)
+
+
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[32mINSERT INTO "users" ("name", "address", "phone", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "test"], ["address", "somewhere"], ["phone", "N/A"], ["created_at", "2018-08-22 03:46:44.172062"], ["updated_at", "2018-08-22 03:46:44.172062"]]
+  [1m[35m (87.2ms)[0m  [1m[36mcommit transaction[0m
+Started GET "/" for 127.0.0.1 at 2018-08-22 10:46:49 +0700
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered users/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 55ms (Views: 48.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/5/edit" for 127.0.0.1 at 2018-08-22 10:46:55 +0700
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"5"}
+Filter chain halted as #<Proc:0x0000000007508618@C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/actionpack-5.1.6/lib/action_controller/metal/http_authentication.rb:70> rendered or redirected
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/5/edit" for 127.0.0.1 at 2018-08-22 10:46:59 +0700
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  Rendering users/edit.html.erb within layouts/application
+  Rendered users/_form.html.erb (60.6ms)
+  Rendered users/edit.html.erb within layouts/application (83.8ms)
+Completed 200 OK in 157ms (Views: 126.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/5" for 127.0.0.1 at 2018-08-22 10:47:03 +0700
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"5"}
+Filter chain halted as #<Proc:0x0000000007508618@C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/actionpack-5.1.6/lib/action_controller/metal/http_authentication.rb:70> rendered or redirected
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/5" for 127.0.0.1 at 2018-08-22 10:47:03 +0700
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mTodo Load (0.0ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."user_id" = ?[0m  [["user_id", 5]]
+  Rendered collection of templates [0 times] (0.0ms)
+  Rendered users/show.html.erb within layouts/application (62.1ms)
+Completed 200 OK in 133ms (Views: 112.8ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/users/5/todos" for 127.0.0.1 at 2018-08-22 10:47:12 +0700
+Processing by TodosController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"sMxvriJs2WmdNKiPGDj2BNltUU8wohvsLFJ32KwJ3dYaMHJl2Qj4XCbHS+zB4DCje3+BJwYWGo6px13TZM2qWg==", "todo"=>{"todo"=>"Learn English", "status"=>"1", "priority"=>"1"}, "commit"=>"Create Todo", "user_id"=>"5"}
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[32mINSERT INTO "todos" ("todo", "status", "priority", "created_at", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?, ?)[0m  [["todo", "Learn English"], ["status", "t"], ["priority", 1], ["created_at", "2018-08-22 03:47:12.241692"], ["updated_at", "2018-08-22 03:47:12.241692"], ["user_id", 5]]
+  [1m[35m (93.1ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/users/5
+Completed 302 Found in 98ms (ActiveRecord: 94.1ms)
+
+
+Started GET "/users/5" for 127.0.0.1 at 2018-08-22 10:47:12 +0700
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mTodo Load (0.0ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."user_id" = ?[0m  [["user_id", 5]]
+  Rendered collection of todos/_todo.html.erb [1 times] (0.5ms)
+  Rendered users/show.html.erb within layouts/application (12.0ms)
+Completed 200 OK in 64ms (Views: 57.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/users/5/edit" for 127.0.0.1 at 2018-08-22 10:47:15 +0700
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  Rendering users/edit.html.erb within layouts/application
+  Rendered users/_form.html.erb (2.0ms)
+  Rendered users/edit.html.erb within layouts/application (7.5ms)
+Completed 200 OK in 55ms (Views: 48.9ms | ActiveRecord: 0.0ms)
+
+
+Started PATCH "/users/5" for 127.0.0.1 at 2018-08-22 10:47:20 +0700
+Processing by UsersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"r+/iIJG8lZHBqVT+L/1TZDfsUtzBSb0d+Gr6HthH6Ie1NuilQC8fg3PA2CpU9rm+yhGkgxt5tCrzISz+wWtXfA==", "user"=>{"name"=>"test", "address"=>"somewhere", "phone"=>"123"}, "commit"=>"Update User", "id"=>"5"}
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (10.1ms)[0m  [1m[33mUPDATE "users" SET "phone" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["phone", "123"], ["updated_at", "2018-08-22 03:47:20.836812"], ["id", 5]]
+  [1m[35m (134.3ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/users/5
+Completed 302 Found in 148ms (ActiveRecord: 144.4ms)
+
+
+Started GET "/users/5" for 127.0.0.1 at 2018-08-22 10:47:20 +0700
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mTodo Load (0.5ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."user_id" = ?[0m  [["user_id", 5]]
+  Rendered collection of todos/_todo.html.erb [1 times] (0.5ms)
+  Rendered users/show.html.erb within layouts/application (11.5ms)
+Completed 200 OK in 73ms (Views: 66.0ms | ActiveRecord: 0.5ms)
+
+
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[32mINSERT INTO "users" ("name", "address", "phone", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "test"], ["address", "x"], ["phone", "y"], ["created_at", "2018-08-22 03:48:23.746744"], ["updated_at", "2018-08-22 03:48:23.746744"]]
+  [1m[35m (111.2ms)[0m  [1m[36mcommit transaction[0m
+Started GET "/users/5" for 127.0.0.1 at 2018-08-22 10:48:27 +0700
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mTodo Load (0.5ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."user_id" = ?[0m  [["user_id", 5]]
+  Rendered collection of todos/_todo.html.erb [1 times] (0.5ms)
+  Rendered users/show.html.erb within layouts/application (10.0ms)
+Completed 200 OK in 60ms (Views: 52.7ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2018-08-22 10:48:31 +0700
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered users/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 55ms (Views: 49.6ms | ActiveRecord: 0.0ms)
+
+
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[33mUPDATE "users" SET "phone" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["phone", ""], ["updated_at", "2018-08-22 03:48:45.411547"], ["id", 6]]
+  [1m[35m (103.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."name" = ? LIMIT ?[0m  [["name", "khoibv"], ["LIMIT", 1]]
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."name" = ? AND "users"."address" = ? LIMIT ?[0m  [["name", "khoibv"], ["address", "hanoi"], ["LIMIT", 1]]
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."name" = ? AND "users"."phone" = ? LIMIT ?[0m  [["name", "khoibv"], ["phone", "123"], ["LIMIT", 11]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.5ms)[0m  [1m[32mINSERT INTO "users" ("name", "address", "phone", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "khoibv"], ["address", "hcmc"], ["phone", "123"], ["created_at", "2018-08-22 03:51:23.980009"], ["updated_at", "2018-08-22 03:51:23.980009"]]
+  [1m[35m (104.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."name" = ? ORDER BY "users"."created_at" DESC LIMIT ?[0m  [["name", "khoibv"], ["LIMIT", 11]]
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[33mUPDATE "users" SET "name" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["name", "khoinv"], ["updated_at", "2018-08-22 03:52:54.463033"], ["id", 7]]
+  [1m[35m (108.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."created" DESC LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."created_at" DESC LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.5ms)[0m  [1m[33mUPDATE "users" SET "address" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["address", "danang"], ["updated_at", "2018-08-22 03:54:23.268773"], ["id", 7]]
+  [1m[35m (113.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[33mUPDATE "users" SET "phone" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["phone", "1234"], ["updated_at", "2018-08-22 03:55:02.334096"], ["id", 7]]
+  [1m[35m (98.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 7]]
+  [1m[35m (111.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.5ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[32mINSERT INTO "users" ("name", "address", "phone", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "khoinv"], ["address", "hcmc"], ["phone", "123"], ["created_at", "2018-08-22 03:56:28.655581"], ["updated_at", "2018-08-22 03:56:28.655581"]]
+  [1m[35m (109.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "users" ("name", "address", "phone", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "khoinv"], ["address", "hcmc"], ["phone", "123"], ["created_at", "2018-08-22 03:56:33.829595"], ["updated_at", "2018-08-22 03:56:33.829595"]]
+  [1m[35m (76.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ?[0m  [["id", 8]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[33mUPDATE "users" SET "address" = ?, "phone" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["address", "danang"], ["phone", "xxx"], ["updated_at", "2018-08-22 03:57:26.960564"], ["id", 8]]
+  [1m[35m (103.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.3ms)[0m  [1m[33mUPDATE "users" SET "address" = ?, "phone" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["address", "danang"], ["phone", "xxx"], ["updated_at", "2018-08-22 03:58:12.016667"], ["id", 1]]
+  [1m[35m (112.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.5ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[33mUPDATE "users" SET "address" = ?, "phone" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["address", "danang"], ["phone", "xxx"], ["updated_at", "2018-08-22 03:58:12.136464"], ["id", 2]]
+  [1m[35m (102.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[33mUPDATE "users" SET "address" = ?, "phone" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["address", "danang"], ["phone", "xxx"], ["updated_at", "2018-08-22 03:58:12.245193"], ["id", 4]]
+  [1m[35m (108.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[33mUPDATE "users" SET "address" = ?, "phone" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["address", "danang"], ["phone", "xxx"], ["updated_at", "2018-08-22 03:58:12.361966"], ["id", 5]]
+  [1m[35m (101.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[33mUPDATE "users" SET "address" = ?, "phone" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["address", "danang"], ["phone", "xxx"], ["updated_at", "2018-08-22 03:58:12.471052"], ["id", 6]]
+  [1m[35m (90.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[33mUPDATE "users" SET "address" = ?, "phone" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["address", "danang"], ["phone", "xxx"], ["updated_at", "2018-08-22 03:58:12.567970"], ["id", 9]]
+  [1m[35m (90.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1000], ["LIMIT", 1]]
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1000], ["LIMIT", 1]]

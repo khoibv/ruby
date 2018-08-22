@@ -1,0 +1,8 @@
+<tr>
+  <td><%= todo.todo %></td>
+  <td><%= todo.status %></td>
+  <td><%= todo.priority %></td>
+  <td>
+    <%= link_to 'Delete', [todo.user, todo], method: :delete, data: { confirm: 'Are you sure?' } %>
+  </td>
+</tr>

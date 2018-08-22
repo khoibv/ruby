@@ -9,6 +9,12 @@
   </head>
 
   <body>
+  <header>
+    <ul>
+      <li><%= link_to 'Todo', controller: 'todos' %></li>
+      <li><%= link_to 'User', controller: 'users' %></li>
+    </ul>
+  </header>
     <%= yield %>
   </body>
 </html>
